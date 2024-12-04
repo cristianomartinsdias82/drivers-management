@@ -1,0 +1,15 @@
+services:
+  sql-server:
+    container_name: mssql-db
+    image: mcr.microsoft.com/azure-sql-edge
+    environment:
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: 'Y0urStr0nGP@sswoRD_2023'
+      MSSQL_PID: 'Developer'
+    ports:
+     - "1433:1433"
+  drivers.api:
+    image: ${DOCKER_REGISTRY-}driversapi
+    build:
+      context: .
+      dockerfile: src/Drivers.Api/Dockerfile

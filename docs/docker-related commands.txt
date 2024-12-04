@@ -1,0 +1,1 @@
+﻿docker run -e "MSSQL_PID=Developer" -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Y0urStr0nGP@sswoRD_2023" -p 1433:1433 --name mssql -d mcr.microsoft.com/azure-sql-edge

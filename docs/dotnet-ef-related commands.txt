@@ -1,0 +1,14 @@
+1.
+dotnet tool update --global dotnet-ef
+
+2.
+(F:\Codebase\_.NET Solutions\Core\8.x\DriversManagement\src\Drivers.Infrastructure.DataAccess>)
+dotnet ef migrations add "Initial" --startup-project ../Drivers.Api
+
+3.
+(F:\Codebase\_.NET Solutions\Core\8.x\DriversManagement\src\Drivers.Infrastructure.DataAccess>)
+dotnet ef database update --startup-project ../Drivers.Api
+
+Support:
+https://stackoverflow.com/questions/52108659/need-to-update-ef-core-tools
+https://courses.dometrain.com/courses/take/from-zero-to-hero-deploying-dotnet-apps-to-azure/lessons/60378226-discovering-the-code-base (2:36)
